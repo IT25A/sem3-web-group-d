@@ -24,3 +24,9 @@ body {
   color: var(--foreground);
   font-family: Arial, Helvetica, sans-serif;
 }
+
+.btn-sidebar {
+  @apply px-3 py-2 rounded-2xl border border-solid border-black/[.08] transition-colors hover:border-transparent hover:bg-blue-950/[.04] dark:border-white/[.145] dark:hover:bg-blue-900 transform hover:scale-95 cursor-pointer
+  flex items-center gap-4;
+  transition: 0.25s;
+}
