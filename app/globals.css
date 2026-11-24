@@ -27,7 +27,7 @@ body {
   @apply flex flex-col flex-1 bg-zinc-50 font-sans dark:bg-gray-900 md:flex-row;
 }
 .page-content {
-  @apply flex flex-1 w-full flex-col items-start py-10 px-8 bg-white dark:bg-gray-900 md:ml-64 md:px-16 md:max-w-3xl overflow-y-auto;
+  @apply flex flex-1 w-full flex-col items-start py-14 px-8 bg-white dark:bg-gray-900 md:ml-64 md:px-16 md:max-w-none overflow-y-auto;
 }
 
 .page-title {
@@ -37,7 +37,14 @@ body {
   @apply text-gray-500 dark:text-gray-400 mb-4;
 }
 .btn-sidebar {
-  @apply px-3 py-2 rounded-2xl border border-solid border-black/8 transition-colors hover:border-transparent hover:bg-blue-950/4 dark:border-white/[.145] dark:hover:bg-blue-900 transform hover:scale-95 cursor-pointer
+  @apply px-3 py-2 rounded-2xl border border-solid border-black/8 transition-colors hover:border-transparent hover:bg-blue-950/4 dark:border-white/[.145] dark:hover:bg-blue-900 cursor-pointer
   flex items-center gap-4;
   transition: 0.25s;
+
+  &.btn-sidebar-footer {
+    @apply flex-1 justify-center;
+  }
+}
+.icon {
+  @apply w-5 h-5 text-black dark:text-white;
 }
